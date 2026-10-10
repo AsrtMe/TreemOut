@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://eakk3mch0knc"]
+
+[ext_resource type="Texture2D" uid="uid://dv5c6wwcl8fd8" path="res://icon.svg" id="1_4q3jd"]
+[ext_resource type="Script" uid="uid://ct23j60simw4n" path="res://TCNS/doni.gd" id="1_p705c"]
+
+[ext_resource type="Script" path="res://scripts/player_states/state_machine.gd" id="3_state_machine"]
+[ext_resource type="Script" path="res://scripts/player_states/motion.gd" id="4_motion"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_m2jhv"]
+
+[node name="DONI" type="CharacterBody2D" unique_id=1871921931]
+process_mode = 3
+script = ExtResource("1_p705c")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=32300087]
+scale = Vector2(0.171875, 0.234375)
+texture = ExtResource("1_4q3jd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=204630031]
+shape = SubResource("CapsuleShape2D_m2jhv")
+debug_color = Color(0.9860323, 0, 0.3324946, 0.41960785)
+
+[node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("initial_state")]
+script = ExtResource("3_state_machine")
+initial_state = NodePath("Air")
+
+[node name="Idle" type="Node" parent="StateMachine" node_paths=PackedStringArray("player")]
+script = ExtResource("4_motion")
+player = NodePath("../..")
+
+[node name="Run" type="Node" parent="StateMachine" node_paths=PackedStringArray("player")]
+script = ExtResource("4_motion")
+player = NodePath("../..")
+
+[node name="Air" type="Node" parent="StateMachine" node_paths=PackedStringArray("player")]
+script = ExtResource("4_motion")
+player = NodePath("../..")

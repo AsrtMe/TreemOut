@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://c66on54va1tpt"]
+
+[ext_resource type="Script" uid="uid://cv71cve1y6fea" path="res://TCNS/bonus_area.gd" id="1_grlhk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m2jhv"]
+
+[node name="BonusArea" type="Area2D" unique_id=734793560]
+script = ExtResource("1_grlhk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1168050587]
+shape = SubResource("RectangleShape2D_m2jhv")
+debug_color = Color(0.8671792, 0.19486797, 0.7313273, 0.41960785)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
