@@ -1,8 +1,9 @@
-[gd_scene load_steps=2 format=3]
+[gd_scene format=3 uid="uid://173a24y0t42f"]
 
-[ext_resource type="Script" path="res://TCNS/main_menu.gd" id="1_menu"]
+[ext_resource type="Script" uid="uid://c75bljqowjkme" path="res://TCNS/main_menu.gd" id="1_menu"]
+[ext_resource type="Texture2D" uid="uid://b58r70mupw57w" path="res://assets/menu_background_hd.png" id="2_v1yqd"]
 
-[node name="MainMenu" type="Control"]
+[node name="MainMenu" type="Control" unique_id=487916896]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -10,3 +11,30 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_menu")
+
+[node name="Background" type="TextureRect" parent="." unique_id=1882802874]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("2_v1yqd")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="CenterContainer" type="CenterContainer" parent="." unique_id=841569339]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PlayButton" type="Button" parent="CenterContainer" unique_id=348836010]
+custom_minimum_size = Vector2(200, 60)
+layout_mode = 2
+text = "Играть"
+
+[connection signal="pressed" from="CenterContainer/PlayButton" to="." method="_on_play_button_pressed"]
