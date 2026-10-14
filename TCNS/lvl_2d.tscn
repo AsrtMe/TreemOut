@@ -47,6 +47,7 @@ shape = SubResource("RectangleShape2D_aeugy")
 
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=889540394]
 position = Vector2(1625, 568)
+constant_linear_velocity = Vector2(1, 0)
 script = ExtResource("4_scb4h")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D" unique_id=779259088]

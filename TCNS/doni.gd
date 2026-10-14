@@ -1,10 +1,10 @@
 extends CharacterBody2D
 class_name Doni
  
-var SPEED = 600
-var JUMP = 550
-var GRAVITY = 1500  
-var cj = 1
+var speed = 600
+var jump_speed = 550
+var gravity = 1500
+var jumps_left = 1
 
 const MAIN_MENU_SCENE := "res://TCNS/main_menu.tscn"
 
@@ -26,5 +26,5 @@ func die() -> void:
 	state_machine.on_child_transition(state_machine.current_state, "dead")
 
 func get_bonus():
-	cj += 1
-	print("Получен +1 прыжок. Сейчас прыжков: ", cj)
+	jumps_left += 1
+	print("Получен +1 прыжок. Сейчас прыжков: ", jumps_left)
