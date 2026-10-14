@@ -1,6 +1,7 @@
 extends CharacterBody2D
 class_name Doni
- 
+signal died 
+
 var speed = 600
 var jump_speed = 550
 var gravity = 1500
