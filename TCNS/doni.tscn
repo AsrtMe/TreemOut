@@ -2,9 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://dv5c6wwcl8fd8" path="res://icon.svg" id="1_4q3jd"]
 [ext_resource type="Script" uid="uid://ct23j60simw4n" path="res://TCNS/doni.gd" id="1_p705c"]
-
-[ext_resource type="Script" path="res://scripts/player_states/state_machine.gd" id="3_state_machine"]
-[ext_resource type="Script" path="res://scripts/player_states/motion.gd" id="4_motion"]
+[ext_resource type="Script" uid="uid://cfcjmtfg4dcwy" path="res://scripts/player_states/state_machine.gd" id="3_state_machine"]
+[ext_resource type="Script" uid="uid://x8bpih1ygvun" path="res://scripts/player_states/motion.gd" id="4_motion"]
+[ext_resource type="Script" uid="uid://b4qxhg5bvikci" path="res://TCNS/dead.gd" id="5_x4mlx"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_m2jhv"]
 
@@ -20,18 +20,22 @@ texture = ExtResource("1_4q3jd")
 shape = SubResource("CapsuleShape2D_m2jhv")
 debug_color = Color(0.9860323, 0, 0.3324946, 0.41960785)
 
-[node name="StateMachine" type="Node" parent="." node_paths=PackedStringArray("initial_state")]
+[node name="StateMachine" type="Node" parent="." unique_id=1113348880 node_paths=PackedStringArray("initial_state")]
 script = ExtResource("3_state_machine")
 initial_state = NodePath("Air")
 
-[node name="Idle" type="Node" parent="StateMachine" node_paths=PackedStringArray("player")]
+[node name="Idle" type="Node" parent="StateMachine" unique_id=1013049061 node_paths=PackedStringArray("player")]
 script = ExtResource("4_motion")
 player = NodePath("../..")
 
-[node name="Run" type="Node" parent="StateMachine" node_paths=PackedStringArray("player")]
+[node name="Run" type="Node" parent="StateMachine" unique_id=1846076182 node_paths=PackedStringArray("player")]
 script = ExtResource("4_motion")
 player = NodePath("../..")
 
-[node name="Air" type="Node" parent="StateMachine" node_paths=PackedStringArray("player")]
+[node name="Air" type="Node" parent="StateMachine" unique_id=2089690988 node_paths=PackedStringArray("player")]
 script = ExtResource("4_motion")
+player = NodePath("../..")
+
+[node name="Dead" type="Node" parent="StateMachine" unique_id=2043568762 node_paths=PackedStringArray("player")]
+script = ExtResource("5_x4mlx")
 player = NodePath("../..")

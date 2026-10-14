@@ -22,6 +22,8 @@ func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("ui_cancel"):
 		get_tree().change_scene_to_file(MAIN_MENU_SCENE)
 
+func die() -> void:
+	state_machine.on_child_transition(state_machine.current_state, "dead")
 
 func get_bonus():
 	cj += 1

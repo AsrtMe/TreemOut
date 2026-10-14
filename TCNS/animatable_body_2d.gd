@@ -19,7 +19,5 @@ func _physics_process(delta):
 		direction = 1.0
 
 func _on_killarea_body_entered(body: Node2D) -> void:
-	print("Коснулся: ", body.name)
-	
-	if body.name == "DONI":
-		get_tree().reload_current_scene()
+	if body is Doni:
+		body.die()

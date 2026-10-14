@@ -12,6 +12,7 @@ func _ready() -> void:
 		if child is State:
 			states[String(child.name).to_lower()] = child
 			child.Transitioned.connect(on_child_transition)
+	print(states)
 
 	if initial_state != null and initial_state.get_parent() == self:
 		current_state = initial_state
@@ -19,8 +20,6 @@ func _ready() -> void:
 	else:
 		push_error("StateMachine requires an initial state among its children.")
 
-
-# The player drives updates so set_physics_process(false) still stops movement.
 func update(delta: float) -> void:
 	if current_state != null:
 		current_state.Update(delta)
@@ -28,7 +27,7 @@ func update(delta: float) -> void:
 
 func physics_update(delta: float) -> void:
 	if current_state != null:
-		current_state.Physics_Update(delta)
+		current_state.physics_Update(delta)
 
 
 func on_child_transition(state: State, new_state_name: String) -> void:

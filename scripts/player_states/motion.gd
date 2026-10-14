@@ -4,7 +4,7 @@ class_name Motion
 @export var player: Doni
 
 
-func Physics_Update(delta: float) -> void:
+func physics_Update(delta: float) -> void:
 	if not player.is_on_floor():
 		player.velocity.y += player.GRAVITY * delta
 	else:
@@ -29,5 +29,4 @@ func Physics_Update(delta: float) -> void:
 
 
 func rjc() -> void:
-	# Jump charges belong to the player, never to a static shared variable.
 	player.cj = 1
