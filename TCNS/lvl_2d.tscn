@@ -19,6 +19,7 @@ size = Vector2(2, 182)
 script = ExtResource("3_level")
 
 [node name="DeathScreen" parent="." unique_id=642176519 instance=ExtResource("5_wetkf")]
+visible = false
 
 [node name="DONI" parent="." unique_id=1871921931 instance=ExtResource("1_4a186")]
 position = Vector2(195, 571)
