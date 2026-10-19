@@ -22,7 +22,7 @@ script = ExtResource("3_level")
 visible = false
 
 [node name="RunTimer" type="Timer" parent="." unique_id=1763499233]
-wait_time = 15.0
+wait_time = 5.0
 one_shot = true
 
 [node name="DONI" parent="." unique_id=1871921931 instance=ExtResource("1_4a186")]
@@ -41,7 +41,7 @@ offset_top = 20.0
 offset_right = 85.0
 offset_bottom = 43.0
 theme_override_font_sizes/font_size = 20
-text = "Time: 15"
+text = "Time: 5"
 
 [node name="BonusArea" parent="." unique_id=734793560 instance=ExtResource("2_415mm")]
 position = Vector2(1840, 551)

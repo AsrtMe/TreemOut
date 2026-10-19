@@ -8,15 +8,15 @@
 [ext_resource type="Script" uid="uid://x8bpih1ygvun" path="res://scripts/player_states/motion.gd" id="4_motion"]
 [ext_resource type="Script" uid="uid://b4qxhg5bvikci" path="res://TCNS/dead.gd" id="5_x4mlx"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_sahaw"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_qtefo"]
 atlas = ExtResource("2_qtefo")
 region = Rect2(0, 0, 32, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_h6jbj"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_w3j4o"]
 atlas = ExtResource("2_qtefo")
 region = Rect2(32, 0, 32, 48)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_4epm6"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_sahaw"]
 atlas = ExtResource("2_qtefo")
 region = Rect2(64, 0, 32, 48)
 
@@ -40,13 +40,13 @@ region = Rect2(96, 0, 32, 48)
 animations = [{
 "frames": [{
 "duration": 1.0,
+"texture": SubResource("AtlasTexture_qtefo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w3j4o")
+}, {
+"duration": 1.0,
 "texture": SubResource("AtlasTexture_sahaw")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_h6jbj")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_4epm6")
 }],
 "loop": 0,
 "name": &"Jump",
@@ -88,8 +88,6 @@ script = ExtResource("1_p705c")
 position = Vector2(-2, 0)
 sprite_frames = SubResource("SpriteFrames_g4v7s")
 animation = &"Jump"
-frame = 2
-frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=204630031]
 visible = false

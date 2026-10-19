@@ -2,10 +2,24 @@
 
 [ext_resource type="Script" uid="uid://cv71cve1y6fea" path="res://TCNS/bonus_area.gd" id="1_grlhk"]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_g4v7s"]
+animations = [{
+"frames": [],
+"loop": 1,
+"name": &"def",
+"speed": 8.0
+}]
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m2jhv"]
 
 [node name="BonusArea" type="Area2D" unique_id=734793560]
 script = ExtResource("1_grlhk")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1016383113]
+scale = Vector2(1.5, 1.625)
+sprite_frames = SubResource("SpriteFrames_g4v7s")
+animation = &"def"
+frame_progress = 0.9188961
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1168050587]
 shape = SubResource("RectangleShape2D_m2jhv")
