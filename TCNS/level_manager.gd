@@ -7,6 +7,7 @@ var game_over := false
 @onready var death_screen: CanvasLayer = $DeathScreen
 @onready var run_timer: Timer = $RunTimer
 @onready var time_label: Label = $HUD/TimeLabel
+@onready var coins_label: Label = $HUD/CoinsLabel
 
 func _ready() -> void:
 	player = $DONI
@@ -28,9 +29,11 @@ func _on_player_died() -> void:
 	
 func _on_run_timer_timeout() -> void:
 	if not game_over:
-		time_label.text = "Time: 0"
+		time_label.text = "Время: 0"
 		player.die()
 
 func _process(_delta: float) -> void:
+	coins_label.text = "Монеты: %d" % GameData.coins
+
 	if not game_over:
 		time_label.text = "Time: %d" % ceili(run_timer.time_left)

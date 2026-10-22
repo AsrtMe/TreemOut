@@ -42,7 +42,15 @@ offset_top = 20.0
 offset_right = 85.0
 offset_bottom = 43.0
 theme_override_font_sizes/font_size = 20
-text = "Time: 5"
+text = "Время: 5"
+
+[node name="CoinsLabel" type="Label" parent="HUD" unique_id=1183395214]
+offset_left = 120.0
+offset_top = 20.0
+offset_right = 224.0
+offset_bottom = 48.0
+theme_override_font_sizes/font_size = 20
+text = "Монеты: 0"
 
 [node name="BonusArea" parent="." unique_id=734793560 instance=ExtResource("2_415mm")]
 position = Vector2(1840, 551)
