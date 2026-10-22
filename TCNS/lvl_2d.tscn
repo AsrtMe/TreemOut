@@ -22,7 +22,7 @@ script = ExtResource("3_level")
 visible = false
 
 [node name="RunTimer" type="Timer" parent="." unique_id=1763499233]
-wait_time = 5.0
+wait_time = 10.0
 one_shot = true
 
 [node name="DONI" parent="." unique_id=1871921931 instance=ExtResource("1_4a186")]

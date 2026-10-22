@@ -13,7 +13,7 @@ func _ready() -> void:
 	death_screen.hide()
 	player.died.connect(_on_player_died)
 	run_timer.timeout.connect(_on_run_timer_timeout)
-	run_timer.start()
+	run_timer.start(GameData.time_limit)
 
 func _physics_process(_delta: float) -> void:
 	if not game_over and player.global_position.y > fall_y:
