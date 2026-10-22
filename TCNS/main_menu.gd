@@ -1,7 +1,7 @@
 extends Control
 
-const LEVEL_SCENE := "res://TCNS/lvl_2d.tscn"
+const HUB_SCENE := "res://TCNS/hub.tscn"
 
 
 func _on_play_button_pressed() -> void:
-	get_tree().change_scene_to_file(LEVEL_SCENE)
+	get_tree().change_scene_to_file(HUB_SCENE)

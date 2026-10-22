@@ -6,4 +6,4 @@ func _unhandled_input(event: InputEvent) -> void:
 		_on_restart_button_pressed()
 
 func _on_restart_button_pressed() -> void:
-	get_tree().reload_current_scene()
+	get_tree().change_scene_to_file("res://TCNS/hub.tscn")

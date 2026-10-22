@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dvhyusb7isy03" path="res://TCNS/deadscreen.gd" id="1_ucsqk"]
 
-[node name="CanvasLayer" type="CanvasLayer" unique_id=642176519]
+[node name="Deadscreen" type="CanvasLayer" unique_id=642176519]
 script = ExtResource("1_ucsqk")
 
 [node name="CenterContainer" type="CenterContainer" parent="." unique_id=1914029329]
@@ -15,6 +15,6 @@ grow_vertical = 2
 [node name="RestartButton" type="Button" parent="CenterContainer" unique_id=1084461480]
 custom_minimum_size = Vector2(260, 60)
 layout_mode = 2
-text = "Начать Заново"
+text = "Ты Мертва"
 
 [connection signal="pressed" from="CenterContainer/RestartButton" to="." method="_on_restart_button_pressed"]

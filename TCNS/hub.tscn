@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://dn6478magnyml"]
+
+[ext_resource type="PackedScene" uid="uid://eakk3mch0knc" path="res://TCNS/doni.tscn" id="1_lpjth"]
+[ext_resource type="Script" uid="uid://b04jbgsbax8yp" path="res://TCNS/portal.gd" id="2_oa4su"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lpjth"]
+size = Vector2(1508.5, 22)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+size = Vector2(72, 124)
+
+[node name="hub" type="Node2D" unique_id=588205320]
+
+[node name="DONI" parent="." unique_id=1871921931 instance=ExtResource("1_lpjth")]
+position = Vector2(1042, 664)
+
+[node name="Camera2D" type="Camera2D" parent="DONI" unique_id=1689995901]
+position = Vector2(-289, -300)
+enabled = false
+limit_enabled = false
+position_smoothing_speed = 7.0
+
+[node name="floor" type="StaticBody2D" parent="." unique_id=1535660001]
+position = Vector2(754, 695)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="floor" unique_id=356724404]
+position = Vector2(0.25, 10)
+shape = SubResource("RectangleShape2D_lpjth")
+
+[node name="Portal" type="Area2D" parent="." unique_id=1137015862]
+position = Vector2(1366, 627)
+script = ExtResource("2_oa4su")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Portal" unique_id=957910955]
+position = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_g4v7s")
+
+[connection signal="body_entered" from="Portal" to="Portal" method="_on_body_entered"]
