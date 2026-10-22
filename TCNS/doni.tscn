@@ -85,6 +85,7 @@ process_mode = 3
 script = ExtResource("1_p705c")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=442661998]
+texture_filter = 1
 position = Vector2(-2, 0)
 sprite_frames = SubResource("SpriteFrames_g4v7s")
 animation = &"Jump"

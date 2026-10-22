@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://dcctkdiilde2p" path="res://TCNS/coin.tscn" id="6_c35w1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aeugy"]
-size = Vector2(1154, 22)
+size = Vector2(797, 22)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
 size = Vector2(0, 180)
@@ -27,7 +27,7 @@ wait_time = 10.0
 one_shot = true
 
 [node name="DONI" parent="." unique_id=1871921931 instance=ExtResource("1_4a186")]
-position = Vector2(195, 571)
+position = Vector2(673, 547)
 
 [node name="Camera2D" type="Camera2D" parent="DONI" unique_id=1061034998]
 position = Vector2(0, 4)
@@ -61,7 +61,7 @@ shape = SubResource("RectangleShape2D_aeugy")
 position = Vector2(449, 657)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="floor" unique_id=2106516511]
-position = Vector2(1, 0)
+position = Vector2(179.5, 0)
 shape = SubResource("RectangleShape2D_aeugy")
 
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=889540394]
@@ -78,6 +78,9 @@ shape = SubResource("RectangleShape2D_g4v7s")
 shape = SubResource("RectangleShape2D_yf5fn")
 
 [node name="Coin" parent="." unique_id=917144863 instance=ExtResource("6_c35w1")]
-position = Vector2(526, 624)
+position = Vector2(1006, 611)
+
+[node name="Coin2" parent="." unique_id=564604537 instance=ExtResource("6_c35w1")]
+position = Vector2(2261, 617)
 
 [connection signal="body_entered" from="AnimatableBody2D/Killarea" to="AnimatableBody2D" method="_on_killarea_body_entered"]

@@ -9,6 +9,9 @@ size = Vector2(1508.5, 22)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
 size = Vector2(72, 124)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yf5fn"]
+size = Vector2(20, 793)
+
 [node name="hub" type="Node2D" unique_id=588205320]
 
 [node name="DONI" parent="." unique_id=1871921931 instance=ExtResource("1_lpjth")]
@@ -34,5 +37,19 @@ script = ExtResource("2_oa4su")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Portal" unique_id=957910955]
 position = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_g4v7s")
+
+[node name="Wall" type="StaticBody2D" parent="." unique_id=1022247280]
+position = Vector2(1, 316)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall" unique_id=218248650]
+position = Vector2(0, 3.5)
+shape = SubResource("RectangleShape2D_yf5fn")
+
+[node name="Wall2" type="StaticBody2D" parent="." unique_id=1745313495]
+position = Vector2(1503, 355)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Wall2" unique_id=211935939]
+position = Vector2(2, -1)
+shape = SubResource("RectangleShape2D_yf5fn")
 
 [connection signal="body_entered" from="Portal" to="Portal" method="_on_body_entered"]
