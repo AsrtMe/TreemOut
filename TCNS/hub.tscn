@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://dn6478magnyml"]
 
+[ext_resource type="Script" uid="uid://cnbydrjn33s8q" path="res://TCNS/hub.gd" id="1_k6xto"]
 [ext_resource type="PackedScene" uid="uid://eakk3mch0knc" path="res://TCNS/doni.tscn" id="1_lpjth"]
 [ext_resource type="Script" uid="uid://b04jbgsbax8yp" path="res://TCNS/portal.gd" id="2_oa4su"]
+[ext_resource type="PackedScene" uid="uid://dc6tunaet4q6y" path="res://TCNS/time_machine.tscn" id="3_d3cpg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lpjth"]
 size = Vector2(1508.5, 22)
@@ -13,6 +15,7 @@ size = Vector2(72, 124)
 size = Vector2(20, 793)
 
 [node name="hub" type="Node2D" unique_id=588205320]
+script = ExtResource("1_k6xto")
 
 [node name="DONI" parent="." unique_id=1871921931 instance=ExtResource("1_lpjth")]
 position = Vector2(1042, 664)
@@ -51,5 +54,27 @@ position = Vector2(1503, 355)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Wall2" unique_id=211935939]
 position = Vector2(2, -1)
 shape = SubResource("RectangleShape2D_yf5fn")
+
+[node name="TimeMachine" parent="." unique_id=1364252196 instance=ExtResource("3_d3cpg")]
+position = Vector2(238, 655)
+
+[node name="Hud" type="CanvasLayer" parent="." unique_id=90056319]
+
+[node name="Coinslabel" type="Label" parent="Hud" unique_id=867655499]
+anchors_preset = -1
+anchor_left = 0.029000001
+anchor_right = 0.029000001
+offset_left = 669.355
+offset_top = 391.0
+offset_right = 752.355
+offset_bottom = 418.0
+text = "Монеты: 0"
+
+[node name="timelimitlabel" type="Label" parent="Hud" unique_id=1976810795]
+offset_left = 668.0
+offset_top = 425.0
+offset_right = 848.0
+offset_bottom = 448.0
+text = "Лимит Времени: 5 сек"
 
 [connection signal="body_entered" from="Portal" to="Portal" method="_on_body_entered"]

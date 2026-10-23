@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dc6tunaet4q6y"]
+
+[ext_resource type="Script" uid="uid://uaii7obbobt0" path="res://TCNS/time_machine.gd" id="1_7oo5h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
+size = Vector2(74, 66)
+
+[node name="TimeMachine" type="Area2D" unique_id=1364252196]
+script = ExtResource("1_7oo5h")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=572183981]
+shape = SubResource("RectangleShape2D_g4v7s")
+
+[node name="Label" type="Label" parent="." unique_id=438597206]
+texture_filter = 2
+offset_left = -72.0
+offset_top = -57.0
+offset_right = 73.0
+offset_bottom = -34.0
+text = "Автомат времени"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]
