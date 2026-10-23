@@ -30,7 +30,7 @@ size = Vector2(2, 182)
 script = ExtResource("3_level")
 
 [node name="testWin" type="Area2D" parent="." unique_id=362874088]
-position = Vector2(5998, 622)
+position = Vector2(6042, 500)
 script = ExtResource("2_qha7y")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="testWin" unique_id=351879416]
@@ -99,7 +99,7 @@ position = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_aeugy")
 
 [node name="floor3" type="StaticBody2D" parent="." unique_id=1922442012]
-position = Vector2(4535, 657)
+position = Vector2(4579, 538)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="floor3" unique_id=1836080743]
 position = Vector2(0, -1)
