@@ -27,7 +27,7 @@ wait_time = 10.0
 one_shot = true
 
 [node name="DONI" parent="." unique_id=1871921931 instance=ExtResource("1_4a186")]
-position = Vector2(673, 547)
+position = Vector2(685, 622)
 
 [node name="Camera2D" type="Camera2D" parent="DONI" unique_id=1061034998]
 position = Vector2(0, 4)
@@ -51,6 +51,14 @@ offset_right = 224.0
 offset_bottom = 48.0
 theme_override_font_sizes/font_size = 20
 text = "Монеты: 0"
+
+[node name="HeightLabel" type="Label" parent="HUD" unique_id=263051931]
+offset_left = 242.0
+offset_top = 20.0
+offset_right = 354.0
+offset_bottom = 54.0
+theme_override_font_sizes/font_size = 20
+text = "Высота: 0м"
 
 [node name="BonusArea" parent="." unique_id=734793560 instance=ExtResource("2_415mm")]
 position = Vector2(1840, 551)

@@ -77,4 +77,14 @@ offset_right = 848.0
 offset_bottom = 448.0
 text = "Лимит Времени: 5 сек"
 
+[node name="HeightrecordLabel" type="Label" parent="Hud" unique_id=24969797]
+anchors_preset = -1
+anchor_right = 0.027
+anchor_bottom = 0.033
+offset_left = 672.0
+offset_top = 455.0
+offset_right = 798.365
+offset_bottom = 454.735
+text = "Рекордная высота: 0м"
+
 [connection signal="body_entered" from="Portal" to="Portal" method="_on_body_entered"]
