@@ -116,7 +116,13 @@ shape = SubResource("RectangleShape2D_g4v7s")
 shape = SubResource("RectangleShape2D_yf5fn")
 
 [node name="Coin" parent="." unique_id=917144863 instance=ExtResource("6_c35w1")]
-position = Vector2(1009, 619)
+position = Vector2(1011, 617)
+
+[node name="Coin4" parent="." unique_id=906936619 instance=ExtResource("6_c35w1")]
+position = Vector2(4579, 510)
+
+[node name="Coin3" parent="." unique_id=2020197330 instance=ExtResource("6_c35w1")]
+position = Vector2(3125, 508)
 
 [node name="Coin2" parent="." unique_id=564604537 instance=ExtResource("6_c35w1")]
 position = Vector2(2256, 624)
