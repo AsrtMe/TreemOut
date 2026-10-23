@@ -2,13 +2,23 @@
 
 [ext_resource type="PackedScene" uid="uid://eakk3mch0knc" path="res://TCNS/doni.tscn" id="1_4a186"]
 [ext_resource type="PackedScene" uid="uid://c66on54va1tpt" path="res://TCNS/bonus_area.tscn" id="2_415mm"]
+[ext_resource type="Script" uid="uid://ba8k2aev2tun5" path="res://TCNS/test_win.gd" id="2_qha7y"]
 [ext_resource type="Script" uid="uid://d3g6ljwjdc5cm" path="res://TCNS/level_manager.gd" id="3_level"]
 [ext_resource type="Script" uid="uid://b22hpt4tom262" path="res://TCNS/animatable_body_2d.gd" id="4_scb4h"]
 [ext_resource type="PackedScene" uid="uid://c5dbb2kj6fiq6" path="res://TCNS/Deadscreen.tscn" id="5_wetkf"]
 [ext_resource type="PackedScene" uid="uid://dcctkdiilde2p" path="res://TCNS/coin.tscn" id="6_c35w1"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3gngh"]
+size = Vector2(41.5, 44)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aeugy"]
 size = Vector2(797, 22)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d0u6y"]
+size = Vector2(2972, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_57qmd"]
+size = Vector2(98, 159)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g4v7s"]
 size = Vector2(0, 180)
@@ -19,6 +29,14 @@ size = Vector2(2, 182)
 [node name="Lvl" type="Node2D" unique_id=537111896]
 script = ExtResource("3_level")
 
+[node name="testWin" type="Area2D" parent="." unique_id=362874088]
+position = Vector2(5998, 622)
+script = ExtResource("2_qha7y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="testWin" unique_id=351879416]
+position = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_3gngh")
+
 [node name="DeathScreen" parent="." unique_id=642176519 instance=ExtResource("5_wetkf")]
 visible = false
 
@@ -27,7 +45,7 @@ wait_time = 10.0
 one_shot = true
 
 [node name="DONI" parent="." unique_id=1871921931 instance=ExtResource("1_4a186")]
-position = Vector2(685, 622)
+position = Vector2(268, 622)
 
 [node name="Camera2D" type="Camera2D" parent="DONI" unique_id=1061034998]
 position = Vector2(0, 4)
@@ -66,6 +84,13 @@ position = Vector2(1840, 551)
 [node name="BonusArea2" parent="." unique_id=317239976 instance=ExtResource("2_415mm")]
 position = Vector2(1349, 549)
 
+[node name="floor" type="StaticBody2D" parent="." unique_id=1384211728]
+position = Vector2(449, 657)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="floor" unique_id=2106516511]
+position = Vector2(179.5, 0)
+shape = SubResource("RectangleShape2D_aeugy")
+
 [node name="floor2" type="StaticBody2D" parent="." unique_id=1896334566]
 position = Vector2(2641, 656)
 
@@ -73,12 +98,19 @@ position = Vector2(2641, 656)
 position = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_aeugy")
 
-[node name="floor" type="StaticBody2D" parent="." unique_id=1384211728]
-position = Vector2(449, 657)
+[node name="floor3" type="StaticBody2D" parent="." unique_id=1922442012]
+position = Vector2(4535, 657)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="floor" unique_id=2106516511]
-position = Vector2(179.5, 0)
-shape = SubResource("RectangleShape2D_aeugy")
+[node name="CollisionShape2D" type="CollisionShape2D" parent="floor3" unique_id=1836080743]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_d0u6y")
+
+[node name="portal" type="StaticBody2D" parent="." unique_id=1766097140]
+position = Vector2(182, 597)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="portal" unique_id=1430731166]
+position = Vector2(1, -8.5)
+shape = SubResource("RectangleShape2D_57qmd")
 
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=889540394]
 position = Vector2(1625, 568)
@@ -99,4 +131,5 @@ position = Vector2(1006, 611)
 [node name="Coin2" parent="." unique_id=564604537 instance=ExtResource("6_c35w1")]
 position = Vector2(2261, 617)
 
+[connection signal="body_entered" from="testWin" to="testWin" method="_on_body_entered"]
 [connection signal="body_entered" from="AnimatableBody2D/Killarea" to="AnimatableBody2D" method="_on_killarea_body_entered"]
