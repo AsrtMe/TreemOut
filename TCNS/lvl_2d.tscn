@@ -7,12 +7,10 @@
 [ext_resource type="Script" uid="uid://b22hpt4tom262" path="res://TCNS/animatable_body_2d.gd" id="4_scb4h"]
 [ext_resource type="PackedScene" uid="uid://c5dbb2kj6fiq6" path="res://TCNS/Deadscreen.tscn" id="5_wetkf"]
 [ext_resource type="PackedScene" uid="uid://dcctkdiilde2p" path="res://TCNS/coin.tscn" id="6_c35w1"]
+[ext_resource type="PackedScene" uid="uid://cgeee20m5yhcc" path="res://TCNS/floornachalo.tscn" id="8_0pv6t"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3gngh"]
 size = Vector2(41.5, 44)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_aeugy"]
-size = Vector2(797, 22)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d0u6y"]
 size = Vector2(2972, 20)
@@ -30,7 +28,7 @@ size = Vector2(2, 182)
 script = ExtResource("3_level")
 
 [node name="testWin" type="Area2D" parent="." unique_id=362874088]
-position = Vector2(6042, 500)
+position = Vector2(6040, 519)
 script = ExtResource("2_qha7y")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="testWin" unique_id=351879416]
@@ -84,22 +82,14 @@ position = Vector2(1840, 551)
 [node name="BonusArea2" parent="." unique_id=317239976 instance=ExtResource("2_415mm")]
 position = Vector2(1349, 549)
 
-[node name="floor" type="StaticBody2D" parent="." unique_id=1384211728]
-position = Vector2(449, 657)
+[node name="floornachalo" parent="." unique_id=461817002 instance=ExtResource("8_0pv6t")]
+position = Vector2(628, 656)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="floor" unique_id=2106516511]
-position = Vector2(179.5, 0)
-shape = SubResource("RectangleShape2D_aeugy")
-
-[node name="floor2" type="StaticBody2D" parent="." unique_id=1896334566]
-position = Vector2(2641, 656)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="floor2" unique_id=1703468520]
-position = Vector2(1, 1)
-shape = SubResource("RectangleShape2D_aeugy")
+[node name="floornachalo2" parent="." unique_id=420468519 instance=ExtResource("8_0pv6t")]
+position = Vector2(2640, 658)
 
 [node name="floor3" type="StaticBody2D" parent="." unique_id=1922442012]
-position = Vector2(4579, 538)
+position = Vector2(4583, 559)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="floor3" unique_id=1836080743]
 position = Vector2(0, -1)
@@ -126,10 +116,10 @@ shape = SubResource("RectangleShape2D_g4v7s")
 shape = SubResource("RectangleShape2D_yf5fn")
 
 [node name="Coin" parent="." unique_id=917144863 instance=ExtResource("6_c35w1")]
-position = Vector2(1006, 611)
+position = Vector2(1009, 619)
 
 [node name="Coin2" parent="." unique_id=564604537 instance=ExtResource("6_c35w1")]
-position = Vector2(2261, 617)
+position = Vector2(2256, 624)
 
 [connection signal="body_entered" from="testWin" to="testWin" method="_on_body_entered"]
 [connection signal="body_entered" from="AnimatableBody2D/Killarea" to="AnimatableBody2D" method="_on_killarea_body_entered"]
