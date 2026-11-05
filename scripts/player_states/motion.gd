@@ -9,6 +9,8 @@ func Enter() -> void:
 
 	if name == "Air":
 		animated_sprite.play("Jump")
+	elif name == "Run":
+		animated_sprite.play("Run")
 	else:
 		animated_sprite.play("idle")
 
