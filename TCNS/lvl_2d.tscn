@@ -8,6 +8,8 @@
 [ext_resource type="PackedScene" uid="uid://c5dbb2kj6fiq6" path="res://TCNS/Deadscreen.tscn" id="5_wetkf"]
 [ext_resource type="PackedScene" uid="uid://dcctkdiilde2p" path="res://TCNS/coin.tscn" id="6_c35w1"]
 [ext_resource type="PackedScene" uid="uid://cgeee20m5yhcc" path="res://TCNS/floornachalo.tscn" id="8_0pv6t"]
+[ext_resource type="PackedScene" uid="uid://clumw03ivf1pg" path="res://TCNS/platformdlina.tscn" id="8_qey7g"]
+[ext_resource type="PackedScene" uid="uid://c25njki30ti2c" path="res://TCNS/platformakorot.tscn" id="9_gwymc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3gngh"]
 size = Vector2(41.5, 44)
@@ -23,278 +25,6 @@ size = Vector2(0, 180)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yf5fn"]
 size = Vector2(2, 182)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_01"]
-resource_local_to_scene = true
-size = Vector2(220.00002, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_02"]
-resource_local_to_scene = true
-size = Vector2(210, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_03"]
-resource_local_to_scene = true
-size = Vector2(240, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_04"]
-resource_local_to_scene = true
-size = Vector2(200, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_05"]
-resource_local_to_scene = true
-size = Vector2(230, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_06"]
-resource_local_to_scene = true
-size = Vector2(220.00002, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_07"]
-resource_local_to_scene = true
-size = Vector2(200, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_08"]
-resource_local_to_scene = true
-size = Vector2(240, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_09"]
-resource_local_to_scene = true
-size = Vector2(220.00002, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_10"]
-resource_local_to_scene = true
-size = Vector2(220.00002, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_11"]
-resource_local_to_scene = true
-size = Vector2(220.00002, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_12"]
-resource_local_to_scene = true
-size = Vector2(220.00002, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_13"]
-resource_local_to_scene = true
-size = Vector2(210, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_14"]
-resource_local_to_scene = true
-size = Vector2(240, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_15"]
-resource_local_to_scene = true
-size = Vector2(200, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_16"]
-resource_local_to_scene = true
-size = Vector2(230, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_17"]
-resource_local_to_scene = true
-size = Vector2(220.00002, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_18"]
-resource_local_to_scene = true
-size = Vector2(200, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_19"]
-resource_local_to_scene = true
-size = Vector2(240, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_20"]
-resource_local_to_scene = true
-size = Vector2(220.00002, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_21"]
-resource_local_to_scene = true
-size = Vector2(220.00002, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_22"]
-resource_local_to_scene = true
-size = Vector2(220.00002, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_23"]
-resource_local_to_scene = true
-size = Vector2(220.00002, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_24"]
-resource_local_to_scene = true
-size = Vector2(220.00002, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_25"]
-resource_local_to_scene = true
-size = Vector2(240, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_26"]
-resource_local_to_scene = true
-size = Vector2(200, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_27"]
-resource_local_to_scene = true
-size = Vector2(230, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_28"]
-resource_local_to_scene = true
-size = Vector2(220.00002, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_29"]
-resource_local_to_scene = true
-size = Vector2(200, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_30"]
-resource_local_to_scene = true
-size = Vector2(240, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_31"]
-resource_local_to_scene = true
-size = Vector2(220.00002, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_32"]
-resource_local_to_scene = true
-size = Vector2(210, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_33"]
-resource_local_to_scene = true
-size = Vector2(220.00002, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_34"]
-resource_local_to_scene = true
-size = Vector2(220.00002, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_35"]
-resource_local_to_scene = true
-size = Vector2(220.00002, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_36"]
-resource_local_to_scene = true
-size = Vector2(220.00002, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_37"]
-resource_local_to_scene = true
-size = Vector2(200, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_38"]
-resource_local_to_scene = true
-size = Vector2(230, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_39"]
-resource_local_to_scene = true
-size = Vector2(220.00002, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_40"]
-resource_local_to_scene = true
-size = Vector2(200, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_41"]
-resource_local_to_scene = true
-size = Vector2(240, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_42"]
-resource_local_to_scene = true
-size = Vector2(220.00002, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_43"]
-resource_local_to_scene = true
-size = Vector2(210, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_44"]
-resource_local_to_scene = true
-size = Vector2(240, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_45"]
-resource_local_to_scene = true
-size = Vector2(220.00002, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_46"]
-resource_local_to_scene = true
-size = Vector2(220.00002, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_47"]
-resource_local_to_scene = true
-size = Vector2(220.00002, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_48"]
-resource_local_to_scene = true
-size = Vector2(220.00002, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_49"]
-resource_local_to_scene = true
-size = Vector2(230, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_50"]
-resource_local_to_scene = true
-size = Vector2(220.00002, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_51"]
-resource_local_to_scene = true
-size = Vector2(200, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_52"]
-resource_local_to_scene = true
-size = Vector2(240, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_53"]
-resource_local_to_scene = true
-size = Vector2(220.00002, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_54"]
-resource_local_to_scene = true
-size = Vector2(210, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_55"]
-resource_local_to_scene = true
-size = Vector2(240, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_56"]
-resource_local_to_scene = true
-size = Vector2(200, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_57"]
-resource_local_to_scene = true
-size = Vector2(220.00002, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_58"]
-resource_local_to_scene = true
-size = Vector2(220.00002, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_59"]
-resource_local_to_scene = true
-size = Vector2(220.00002, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_60"]
-resource_local_to_scene = true
-size = Vector2(220.00002, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_61"]
-resource_local_to_scene = true
-size = Vector2(220.00002, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_62"]
-resource_local_to_scene = true
-size = Vector2(200, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_63"]
-resource_local_to_scene = true
-size = Vector2(240, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_64"]
-resource_local_to_scene = true
-size = Vector2(220.00002, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_65"]
-resource_local_to_scene = true
-size = Vector2(210, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_66"]
-resource_local_to_scene = true
-size = Vector2(240, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_67"]
-resource_local_to_scene = true
-size = Vector2(200, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_mountain_edit_68"]
-resource_local_to_scene = true
-size = Vector2(230, 20)
 
 [node name="Lvl" type="Node2D" unique_id=537111896]
 script = ExtResource("3_level")
@@ -349,23 +79,53 @@ theme_override_font_sizes/font_size = 20
 text = "Высота: 0м"
 
 [node name="BonusArea" parent="." unique_id=734793560 instance=ExtResource("2_415mm")]
-position = Vector2(1840, 551)
+position = Vector2(1840, 543)
 
 [node name="BonusArea2" parent="." unique_id=317239976 instance=ExtResource("2_415mm")]
-position = Vector2(1349, 549)
+position = Vector2(1488, 573)
 
 [node name="floornachalo" parent="." unique_id=461817002 instance=ExtResource("8_0pv6t")]
 position = Vector2(628, 656)
 
 [node name="floornachalo2" parent="." unique_id=420468519 instance=ExtResource("8_0pv6t")]
-position = Vector2(2640, 658)
+position = Vector2(2720, 707)
 
 [node name="floor3" type="StaticBody2D" parent="." unique_id=1922442012]
-position = Vector2(4583, 559)
+position = Vector2(4630, 609)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="floor3" unique_id=1836080743]
 position = Vector2(0, -1.5)
 shape = SubResource("RectangleShape2D_d0u6y")
+
+[node name="plarform" parent="." unique_id=141353478 instance=ExtResource("9_gwymc")]
+position = Vector2(6235, 559)
+
+[node name="plarform2" parent="." unique_id=1135349429 instance=ExtResource("9_gwymc")]
+position = Vector2(6461, 506)
+
+[node name="plarform3" parent="." unique_id=2102745073 instance=ExtResource("9_gwymc")]
+position = Vector2(6686, 462)
+
+[node name="plarform4" parent="." unique_id=1461118046 instance=ExtResource("9_gwymc")]
+position = Vector2(6908, 418)
+
+[node name="plarform5" parent="." unique_id=1537273920 instance=ExtResource("9_gwymc")]
+position = Vector2(8535, 58)
+
+[node name="plarform6" parent="." unique_id=1424434414 instance=ExtResource("9_gwymc")]
+position = Vector2(8297, 255)
+
+[node name="plarform7" parent="." unique_id=940773686 instance=ExtResource("9_gwymc")]
+position = Vector2(8535, 194)
+
+[node name="plarform8" parent="." unique_id=792112346 instance=ExtResource("9_gwymc")]
+position = Vector2(8752, 134)
+
+[node name="platformd" parent="." unique_id=2144184628 instance=ExtResource("8_qey7g")]
+position = Vector2(7592, 372)
+
+[node name="platformd2" parent="." unique_id=1864093438 instance=ExtResource("8_qey7g")]
+position = Vector2(7592, 8)
 
 [node name="portal" type="StaticBody2D" parent="." unique_id=1766097140]
 position = Vector2(182, 597)
@@ -375,7 +135,7 @@ position = Vector2(1, -8.5)
 shape = SubResource("RectangleShape2D_57qmd")
 
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=889540394]
-position = Vector2(1625, 568)
+position = Vector2(9605, -742)
 constant_linear_velocity = Vector2(1, 0)
 script = ExtResource("4_scb4h")
 
@@ -391,509 +151,13 @@ shape = SubResource("RectangleShape2D_yf5fn")
 position = Vector2(1011, 617)
 
 [node name="Coin4" parent="." unique_id=906936619 instance=ExtResource("6_c35w1")]
-position = Vector2(4270, 514)
+position = Vector2(4636, 552)
 
 [node name="Coin3" parent="." unique_id=2020197330 instance=ExtResource("6_c35w1")]
-position = Vector2(3125, 508)
+position = Vector2(3242, 558)
 
 [node name="Coin2" parent="." unique_id=564604537 instance=ExtResource("6_c35w1")]
 position = Vector2(2256, 624)
-
-[node name="MountainPlatforms" type="Node2D" parent="." unique_id=1636937620]
-position = Vector2(4771, 499)
-
-[node name="Traverse01" type="Node2D" parent="MountainPlatforms" unique_id=126887343]
-
-[node name="Traverse01" type="StaticBody2D" parent="MountainPlatforms/Traverse01" unique_id=2053575100]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse01/Traverse01" unique_id=1478623432]
-shape = SubResource("RectangleShape2D_mountain_edit_01")
-
-[node name="Traverse02" type="StaticBody2D" parent="MountainPlatforms/Traverse01" unique_id=1173559208]
-position = Vector2(433, -47)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse01/Traverse02" unique_id=2086617830]
-position = Vector2(37, -21)
-shape = SubResource("RectangleShape2D_mountain_edit_02")
-
-[node name="Coin01" parent="MountainPlatforms/Traverse01/Traverse02" unique_id=1468270404 instance=ExtResource("6_c35w1")]
-position = Vector2(68, -57)
-
-[node name="Traverse03" type="StaticBody2D" parent="MountainPlatforms/Traverse01" unique_id=1490294924]
-position = Vector2(893, -113)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse01/Traverse03" unique_id=146444595]
-position = Vector2(2, -23)
-shape = SubResource("RectangleShape2D_mountain_edit_03")
-
-[node name="Traverse04" type="StaticBody2D" parent="MountainPlatforms/Traverse01" unique_id=1600088311]
-position = Vector2(1270, -221)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse01/Traverse04" unique_id=203878167]
-shape = SubResource("RectangleShape2D_mountain_edit_04")
-
-[node name="Coin02" parent="MountainPlatforms/Traverse01/Traverse04" unique_id=1551308818 instance=ExtResource("6_c35w1")]
-position = Vector2(68, -46)
-
-[node name="Traverse05" type="StaticBody2D" parent="MountainPlatforms/Traverse01" unique_id=287124501]
-position = Vector2(1720, -271)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse01/Traverse05" unique_id=934539221]
-shape = SubResource("RectangleShape2D_mountain_edit_05")
-
-[node name="Traverse06" type="StaticBody2D" parent="MountainPlatforms/Traverse01" unique_id=2096048827]
-position = Vector2(2170, -326)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse01/Traverse06" unique_id=1215648707]
-shape = SubResource("RectangleShape2D_mountain_edit_06")
-
-[node name="Coin03" parent="MountainPlatforms/Traverse01/Traverse06" unique_id=1041197553 instance=ExtResource("6_c35w1")]
-position = Vector2(78, -46)
-
-[node name="Traverse07" type="StaticBody2D" parent="MountainPlatforms/Traverse01" unique_id=1150421782]
-position = Vector2(2590, -371)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse01/Traverse07" unique_id=271007189]
-shape = SubResource("RectangleShape2D_mountain_edit_07")
-
-[node name="Traverse08" type="StaticBody2D" parent="MountainPlatforms/Traverse01" unique_id=1349255722]
-position = Vector2(3040, -421)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse01/Traverse08" unique_id=1960281564]
-shape = SubResource("RectangleShape2D_mountain_edit_08")
-
-[node name="Coin04" parent="MountainPlatforms/Traverse01/Traverse08" unique_id=1161205408 instance=ExtResource("6_c35w1")]
-position = Vector2(88, -46)
-
-[node name="Turn09" type="StaticBody2D" parent="MountainPlatforms/Traverse01" unique_id=544863209]
-position = Vector2(3400, -476)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse01/Turn09" unique_id=1139741907]
-shape = SubResource("RectangleShape2D_mountain_edit_09")
-
-[node name="Turn10" type="StaticBody2D" parent="MountainPlatforms/Traverse01" unique_id=1442542463]
-position = Vector2(3750, -531)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse01/Turn10" unique_id=207504223]
-shape = SubResource("RectangleShape2D_mountain_edit_10")
-
-[node name="Turn11" type="StaticBody2D" parent="MountainPlatforms/Traverse01" unique_id=1487360684]
-position = Vector2(4100, -586)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse01/Turn11" unique_id=1931377890]
-shape = SubResource("RectangleShape2D_mountain_edit_11")
-
-[node name="Turn12" type="StaticBody2D" parent="MountainPlatforms/Traverse01" unique_id=1626414891]
-position = Vector2(3750, -661)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse01/Turn12" unique_id=333654219]
-shape = SubResource("RectangleShape2D_mountain_edit_12")
-
-[node name="Traverse02" type="Node2D" parent="MountainPlatforms" unique_id=1562468114]
-position = Vector2(3325, -706)
-
-[node name="Traverse13" type="StaticBody2D" parent="MountainPlatforms/Traverse02" unique_id=925928354]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse02/Traverse13" unique_id=267105010]
-shape = SubResource("RectangleShape2D_mountain_edit_13")
-
-[node name="Traverse14" type="StaticBody2D" parent="MountainPlatforms/Traverse02" unique_id=1878069581]
-position = Vector2(-465, -55)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse02/Traverse14" unique_id=499868280]
-shape = SubResource("RectangleShape2D_mountain_edit_14")
-
-[node name="Coin05" parent="MountainPlatforms/Traverse02/Traverse14" unique_id=1478305278 instance=ExtResource("6_c35w1")]
-position = Vector2(-88, -46)
-
-[node name="Traverse15" type="StaticBody2D" parent="MountainPlatforms/Traverse02" unique_id=647060504]
-position = Vector2(-905, -100)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse02/Traverse15" unique_id=1255305441]
-shape = SubResource("RectangleShape2D_mountain_edit_15")
-
-[node name="Traverse16" type="StaticBody2D" parent="MountainPlatforms/Traverse02" unique_id=61202628]
-position = Vector2(-1355, -150)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse02/Traverse16" unique_id=13458495]
-shape = SubResource("RectangleShape2D_mountain_edit_16")
-
-[node name="Coin06" parent="MountainPlatforms/Traverse02/Traverse16" unique_id=790161794 instance=ExtResource("6_c35w1")]
-position = Vector2(-83, -46)
-
-[node name="Traverse17" type="StaticBody2D" parent="MountainPlatforms/Traverse02" unique_id=2143745703]
-position = Vector2(-1805, -205)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse02/Traverse17" unique_id=965525771]
-shape = SubResource("RectangleShape2D_mountain_edit_17")
-
-[node name="Traverse18" type="StaticBody2D" parent="MountainPlatforms/Traverse02" unique_id=321447662]
-position = Vector2(-2225, -250)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse02/Traverse18" unique_id=1922569753]
-shape = SubResource("RectangleShape2D_mountain_edit_18")
-
-[node name="Coin07" parent="MountainPlatforms/Traverse02/Traverse18" unique_id=477744350 instance=ExtResource("6_c35w1")]
-position = Vector2(-68, -46)
-
-[node name="Traverse19" type="StaticBody2D" parent="MountainPlatforms/Traverse02" unique_id=685892389]
-position = Vector2(-2675, -300)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse02/Traverse19" unique_id=1835752975]
-shape = SubResource("RectangleShape2D_mountain_edit_19")
-
-[node name="Traverse20" type="StaticBody2D" parent="MountainPlatforms/Traverse02" unique_id=585034395]
-position = Vector2(-3135, -350)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse02/Traverse20" unique_id=278466062]
-shape = SubResource("RectangleShape2D_mountain_edit_20")
-
-[node name="Coin08" parent="MountainPlatforms/Traverse02/Traverse20" unique_id=1209588690 instance=ExtResource("6_c35w1")]
-position = Vector2(-78, -46)
-
-[node name="Turn21" type="StaticBody2D" parent="MountainPlatforms/Traverse02" unique_id=1554816806]
-position = Vector2(-3495, -405)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse02/Turn21" unique_id=1964522279]
-shape = SubResource("RectangleShape2D_mountain_edit_21")
-
-[node name="Turn22" type="StaticBody2D" parent="MountainPlatforms/Traverse02" unique_id=1688804457]
-position = Vector2(-3845, -460)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse02/Turn22" unique_id=283517626]
-shape = SubResource("RectangleShape2D_mountain_edit_22")
-
-[node name="Turn23" type="StaticBody2D" parent="MountainPlatforms/Traverse02" unique_id=1497603982]
-position = Vector2(-4195, -515)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse02/Turn23" unique_id=1906923630]
-shape = SubResource("RectangleShape2D_mountain_edit_23")
-
-[node name="Turn24" type="StaticBody2D" parent="MountainPlatforms/Traverse02" unique_id=1679763090]
-position = Vector2(-3845, -590)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse02/Turn24" unique_id=2051544468]
-shape = SubResource("RectangleShape2D_mountain_edit_24")
-
-[node name="Traverse03" type="Node2D" parent="MountainPlatforms" unique_id=62075328]
-position = Vector2(-50, -1351)
-
-[node name="Traverse25" type="StaticBody2D" parent="MountainPlatforms/Traverse03" unique_id=1551778431]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse03/Traverse25" unique_id=493384954]
-shape = SubResource("RectangleShape2D_mountain_edit_25")
-
-[node name="Traverse26" type="StaticBody2D" parent="MountainPlatforms/Traverse03" unique_id=395900361]
-position = Vector2(440, -45)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse03/Traverse26" unique_id=940943549]
-shape = SubResource("RectangleShape2D_mountain_edit_26")
-
-[node name="Coin09" parent="MountainPlatforms/Traverse03/Traverse26" unique_id=154542493 instance=ExtResource("6_c35w1")]
-position = Vector2(68, -46)
-
-[node name="Traverse27" type="StaticBody2D" parent="MountainPlatforms/Traverse03" unique_id=248011823]
-position = Vector2(890, -95)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse03/Traverse27" unique_id=1847831032]
-shape = SubResource("RectangleShape2D_mountain_edit_27")
-
-[node name="Traverse28" type="StaticBody2D" parent="MountainPlatforms/Traverse03" unique_id=1990159443]
-position = Vector2(1340, -150)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse03/Traverse28" unique_id=735987385]
-shape = SubResource("RectangleShape2D_mountain_edit_28")
-
-[node name="Coin10" parent="MountainPlatforms/Traverse03/Traverse28" unique_id=635284985 instance=ExtResource("6_c35w1")]
-position = Vector2(78, -46)
-
-[node name="Traverse29" type="StaticBody2D" parent="MountainPlatforms/Traverse03" unique_id=1372368341]
-position = Vector2(1760, -195)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse03/Traverse29" unique_id=35113029]
-shape = SubResource("RectangleShape2D_mountain_edit_29")
-
-[node name="Traverse30" type="StaticBody2D" parent="MountainPlatforms/Traverse03" unique_id=1620869220]
-position = Vector2(2210, -245)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse03/Traverse30" unique_id=1638403222]
-shape = SubResource("RectangleShape2D_mountain_edit_30")
-
-[node name="Coin11" parent="MountainPlatforms/Traverse03/Traverse30" unique_id=349068310 instance=ExtResource("6_c35w1")]
-position = Vector2(88, -46)
-
-[node name="Traverse31" type="StaticBody2D" parent="MountainPlatforms/Traverse03" unique_id=1709507178]
-position = Vector2(2670, -295)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse03/Traverse31" unique_id=588160723]
-shape = SubResource("RectangleShape2D_mountain_edit_31")
-
-[node name="Traverse32" type="StaticBody2D" parent="MountainPlatforms/Traverse03" unique_id=735989726]
-position = Vector2(3095, -340)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse03/Traverse32" unique_id=1953758709]
-shape = SubResource("RectangleShape2D_mountain_edit_32")
-
-[node name="Coin12" parent="MountainPlatforms/Traverse03/Traverse32" unique_id=2112910895 instance=ExtResource("6_c35w1")]
-position = Vector2(73, -46)
-
-[node name="Turn33" type="StaticBody2D" parent="MountainPlatforms/Traverse03" unique_id=1379502824]
-position = Vector2(3455, -395)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse03/Turn33" unique_id=1403856929]
-shape = SubResource("RectangleShape2D_mountain_edit_33")
-
-[node name="Turn34" type="StaticBody2D" parent="MountainPlatforms/Traverse03" unique_id=1995964107]
-position = Vector2(3805, -450)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse03/Turn34" unique_id=927824149]
-shape = SubResource("RectangleShape2D_mountain_edit_34")
-
-[node name="Turn35" type="StaticBody2D" parent="MountainPlatforms/Traverse03" unique_id=159028669]
-position = Vector2(4155, -505)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse03/Turn35" unique_id=1582531128]
-shape = SubResource("RectangleShape2D_mountain_edit_35")
-
-[node name="Turn36" type="StaticBody2D" parent="MountainPlatforms/Traverse03" unique_id=1331401348]
-position = Vector2(3805, -580)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse03/Turn36" unique_id=1647816345]
-shape = SubResource("RectangleShape2D_mountain_edit_36")
-
-[node name="Traverse04" type="Node2D" parent="MountainPlatforms" unique_id=285297335]
-position = Vector2(3325, -1976)
-
-[node name="Traverse37" type="StaticBody2D" parent="MountainPlatforms/Traverse04" unique_id=1556311319]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse04/Traverse37" unique_id=1949481816]
-shape = SubResource("RectangleShape2D_mountain_edit_37")
-
-[node name="Traverse38" type="StaticBody2D" parent="MountainPlatforms/Traverse04" unique_id=911339888]
-position = Vector2(-450, -50)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse04/Traverse38" unique_id=1344687652]
-shape = SubResource("RectangleShape2D_mountain_edit_38")
-
-[node name="Coin13" parent="MountainPlatforms/Traverse04/Traverse38" unique_id=1996322592 instance=ExtResource("6_c35w1")]
-position = Vector2(-83, -46)
-
-[node name="Traverse39" type="StaticBody2D" parent="MountainPlatforms/Traverse04" unique_id=1346101880]
-position = Vector2(-900, -105)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse04/Traverse39" unique_id=1296798375]
-shape = SubResource("RectangleShape2D_mountain_edit_39")
-
-[node name="Traverse40" type="StaticBody2D" parent="MountainPlatforms/Traverse04" unique_id=232524301]
-position = Vector2(-1320, -150)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse04/Traverse40" unique_id=63968872]
-shape = SubResource("RectangleShape2D_mountain_edit_40")
-
-[node name="Coin14" parent="MountainPlatforms/Traverse04/Traverse40" unique_id=1692968878 instance=ExtResource("6_c35w1")]
-position = Vector2(-68, -46)
-
-[node name="Traverse41" type="StaticBody2D" parent="MountainPlatforms/Traverse04" unique_id=264563917]
-position = Vector2(-1770, -200)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse04/Traverse41" unique_id=1190935585]
-shape = SubResource("RectangleShape2D_mountain_edit_41")
-
-[node name="Traverse42" type="StaticBody2D" parent="MountainPlatforms/Traverse04" unique_id=1003329059]
-position = Vector2(-2230, -250)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse04/Traverse42" unique_id=1598133234]
-shape = SubResource("RectangleShape2D_mountain_edit_42")
-
-[node name="Coin15" parent="MountainPlatforms/Traverse04/Traverse42" unique_id=279066067 instance=ExtResource("6_c35w1")]
-position = Vector2(-78, -46)
-
-[node name="Traverse43" type="StaticBody2D" parent="MountainPlatforms/Traverse04" unique_id=630190462]
-position = Vector2(-2655, -295)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse04/Traverse43" unique_id=564277358]
-shape = SubResource("RectangleShape2D_mountain_edit_43")
-
-[node name="Traverse44" type="StaticBody2D" parent="MountainPlatforms/Traverse04" unique_id=1347755269]
-position = Vector2(-3120, -350)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse04/Traverse44" unique_id=312261538]
-shape = SubResource("RectangleShape2D_mountain_edit_44")
-
-[node name="Coin16" parent="MountainPlatforms/Traverse04/Traverse44" unique_id=1985767848 instance=ExtResource("6_c35w1")]
-position = Vector2(-88, -46)
-
-[node name="Turn45" type="StaticBody2D" parent="MountainPlatforms/Traverse04" unique_id=1459919536]
-position = Vector2(-3480, -405)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse04/Turn45" unique_id=1270981835]
-shape = SubResource("RectangleShape2D_mountain_edit_45")
-
-[node name="Turn46" type="StaticBody2D" parent="MountainPlatforms/Traverse04" unique_id=1264383888]
-position = Vector2(-3830, -460)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse04/Turn46" unique_id=1386348104]
-shape = SubResource("RectangleShape2D_mountain_edit_46")
-
-[node name="Turn47" type="StaticBody2D" parent="MountainPlatforms/Traverse04" unique_id=478888476]
-position = Vector2(-4180, -515)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse04/Turn47" unique_id=378169221]
-shape = SubResource("RectangleShape2D_mountain_edit_47")
-
-[node name="Turn48" type="StaticBody2D" parent="MountainPlatforms/Traverse04" unique_id=1371428381]
-position = Vector2(-3830, -590)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse04/Turn48" unique_id=159073505]
-shape = SubResource("RectangleShape2D_mountain_edit_48")
-
-[node name="Traverse05" type="Node2D" parent="MountainPlatforms" unique_id=1792139661]
-position = Vector2(-45, -2616)
-
-[node name="Traverse49" type="StaticBody2D" parent="MountainPlatforms/Traverse05" unique_id=205200161]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse05/Traverse49" unique_id=1512338949]
-shape = SubResource("RectangleShape2D_mountain_edit_49")
-
-[node name="Traverse50" type="StaticBody2D" parent="MountainPlatforms/Traverse05" unique_id=176038143]
-position = Vector2(450, -55)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse05/Traverse50" unique_id=8562902]
-shape = SubResource("RectangleShape2D_mountain_edit_50")
-
-[node name="Coin17" parent="MountainPlatforms/Traverse05/Traverse50" unique_id=1281249719 instance=ExtResource("6_c35w1")]
-position = Vector2(78, -46)
-
-[node name="Traverse51" type="StaticBody2D" parent="MountainPlatforms/Traverse05" unique_id=785781880]
-position = Vector2(870, -100)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse05/Traverse51" unique_id=1941050214]
-shape = SubResource("RectangleShape2D_mountain_edit_51")
-
-[node name="Traverse52" type="StaticBody2D" parent="MountainPlatforms/Traverse05" unique_id=124968618]
-position = Vector2(1320, -150)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse05/Traverse52" unique_id=394257229]
-shape = SubResource("RectangleShape2D_mountain_edit_52")
-
-[node name="Coin18" parent="MountainPlatforms/Traverse05/Traverse52" unique_id=1736157786 instance=ExtResource("6_c35w1")]
-position = Vector2(88, -46)
-
-[node name="Traverse53" type="StaticBody2D" parent="MountainPlatforms/Traverse05" unique_id=702744482]
-position = Vector2(1780, -200)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse05/Traverse53" unique_id=1689037397]
-shape = SubResource("RectangleShape2D_mountain_edit_53")
-
-[node name="Traverse54" type="StaticBody2D" parent="MountainPlatforms/Traverse05" unique_id=1237419102]
-position = Vector2(2205, -245)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse05/Traverse54" unique_id=1754331326]
-shape = SubResource("RectangleShape2D_mountain_edit_54")
-
-[node name="Coin19" parent="MountainPlatforms/Traverse05/Traverse54" unique_id=566073495 instance=ExtResource("6_c35w1")]
-position = Vector2(73, -46)
-
-[node name="Traverse55" type="StaticBody2D" parent="MountainPlatforms/Traverse05" unique_id=707207551]
-position = Vector2(2670, -300)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse05/Traverse55" unique_id=474255472]
-shape = SubResource("RectangleShape2D_mountain_edit_55")
-
-[node name="Traverse56" type="StaticBody2D" parent="MountainPlatforms/Traverse05" unique_id=1007411020]
-position = Vector2(3110, -345)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse05/Traverse56" unique_id=1944993402]
-shape = SubResource("RectangleShape2D_mountain_edit_56")
-
-[node name="Coin20" parent="MountainPlatforms/Traverse05/Traverse56" unique_id=1855178092 instance=ExtResource("6_c35w1")]
-position = Vector2(68, -46)
-
-[node name="Turn57" type="StaticBody2D" parent="MountainPlatforms/Traverse05" unique_id=672599082]
-position = Vector2(3470, -400)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse05/Turn57" unique_id=1006569699]
-shape = SubResource("RectangleShape2D_mountain_edit_57")
-
-[node name="Turn58" type="StaticBody2D" parent="MountainPlatforms/Traverse05" unique_id=191313325]
-position = Vector2(3820, -455)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse05/Turn58" unique_id=128216753]
-shape = SubResource("RectangleShape2D_mountain_edit_58")
-
-[node name="Turn59" type="StaticBody2D" parent="MountainPlatforms/Traverse05" unique_id=964485814]
-position = Vector2(4170, -510)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse05/Turn59" unique_id=1466321806]
-shape = SubResource("RectangleShape2D_mountain_edit_59")
-
-[node name="Turn60" type="StaticBody2D" parent="MountainPlatforms/Traverse05" unique_id=1836697036]
-position = Vector2(3820, -585)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse05/Turn60" unique_id=1189750175]
-shape = SubResource("RectangleShape2D_mountain_edit_60")
-
-[node name="Traverse06" type="Node2D" parent="MountainPlatforms" unique_id=625753092]
-position = Vector2(3330, -3256)
-
-[node name="Traverse61" type="StaticBody2D" parent="MountainPlatforms/Traverse06" unique_id=2013670865]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse06/Traverse61" unique_id=787250577]
-shape = SubResource("RectangleShape2D_mountain_edit_61")
-
-[node name="Traverse62" type="StaticBody2D" parent="MountainPlatforms/Traverse06" unique_id=1266828116]
-position = Vector2(-420, -45)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse06/Traverse62" unique_id=1635069571]
-shape = SubResource("RectangleShape2D_mountain_edit_62")
-
-[node name="Coin21" parent="MountainPlatforms/Traverse06/Traverse62" unique_id=1848401761 instance=ExtResource("6_c35w1")]
-position = Vector2(-68, -46)
-
-[node name="Traverse63" type="StaticBody2D" parent="MountainPlatforms/Traverse06" unique_id=909298672]
-position = Vector2(-870, -95)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse06/Traverse63" unique_id=863704801]
-shape = SubResource("RectangleShape2D_mountain_edit_63")
-
-[node name="Traverse64" type="StaticBody2D" parent="MountainPlatforms/Traverse06" unique_id=627544469]
-position = Vector2(-1330, -145)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse06/Traverse64" unique_id=660316056]
-shape = SubResource("RectangleShape2D_mountain_edit_64")
-
-[node name="Coin22" parent="MountainPlatforms/Traverse06/Traverse64" unique_id=1571554113 instance=ExtResource("6_c35w1")]
-position = Vector2(-78, -46)
-
-[node name="Traverse65" type="StaticBody2D" parent="MountainPlatforms/Traverse06" unique_id=43471892]
-position = Vector2(-1755, -190)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse06/Traverse65" unique_id=1859276199]
-shape = SubResource("RectangleShape2D_mountain_edit_65")
-
-[node name="Traverse66" type="StaticBody2D" parent="MountainPlatforms/Traverse06" unique_id=1998158061]
-position = Vector2(-2220, -245)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse06/Traverse66" unique_id=873990184]
-shape = SubResource("RectangleShape2D_mountain_edit_66")
-
-[node name="Coin23" parent="MountainPlatforms/Traverse06/Traverse66" unique_id=699270122 instance=ExtResource("6_c35w1")]
-position = Vector2(-88, -46)
-
-[node name="Traverse67" type="StaticBody2D" parent="MountainPlatforms/Traverse06" unique_id=1100920850]
-position = Vector2(-2660, -290)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse06/Traverse67" unique_id=71883187]
-shape = SubResource("RectangleShape2D_mountain_edit_67")
-
-[node name="Traverse68" type="StaticBody2D" parent="MountainPlatforms/Traverse06" unique_id=2055956410]
-position = Vector2(-3110, -340)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="MountainPlatforms/Traverse06/Traverse68" unique_id=711694815]
-shape = SubResource("RectangleShape2D_mountain_edit_68")
-
-[node name="Coin24" parent="MountainPlatforms/Traverse06/Traverse68" unique_id=438135954 instance=ExtResource("6_c35w1")]
-position = Vector2(-83, -46)
 
 [connection signal="body_entered" from="testWin" to="testWin" method="_on_body_entered"]
 [connection signal="body_entered" from="AnimatableBody2D/Killarea" to="AnimatableBody2D" method="_on_killarea_body_entered"]
